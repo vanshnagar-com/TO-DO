@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/productivity.css" />
+    <link rel="stylesheet" href="css/todo.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/pomodoro.css" />
+  </head>
+
+  <body class="h-screen m-0">
+  <!--main section-->
+    <div class=" flex flex-row ml-20 bg-black  h-screen ">  
+       <!--Pomodoro-->
+      <div class=" bg-gradient-to-r from-Witish to-Greyish w-3/6 ">
+        <div class="flex justify-center ">
+          <div id="timer-message">Please select a timer before starting.</div>
+
+          <div class="container">
+            <div class="timer">
+              <h1>🍅 Pomodoro Timer</h1>
+
+              <div class="button-container">
+                <button class="button" id="pomodoro-session">Pomodoro</button>
+                <button class="button" id="short-break">Short Break</button>
+                <button class="button" id="long-break">Long break</button>
+              </div>
+
+              <div
+                id="pomodoro-timer"
+                class="timer-display"
+                data-duration="25.00"
+              >
+                25:00
+              </div>
+
+              <div id="short-timer" class="timer-display" data-duration="5.00">
+                5:00
+              </div>
+
+              <div id="long-timer" class="timer-display" data-duration="10.00">
+                10:00
+              </div>
+
+              <div id="buttons">
+                <button id="start">START</button>
+                <button id="stop">STOP</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-gray-300">CHAT GPT API</div>
+      </div>
+      <!--TO DO-->
+      <div class="bg-Greyish w-3/5 border-l border-Blackish px-5">
+        <div class="">
+          <div class="flex justify-between m-5">
+            <input
+              class="js-input-todo bg-gradient-to-r from-Greyish to-Witish  text-lg w-64 rounded-full"
+              type="text"
+              placeholder="Task - To-Do"
+            />
+            <input
+              type="time"
+              class="js-todo-time w-28 rounded-sm pl-1 bg-black  "
+            />
+            <input
+              type="range"
+              class="js-slider-input "
+              name=""
+              min="0"
+              max="60"
+              step="30"
+              id=""
+            />
+            <button
+              class="js-add-button  text-white bg-black px-6 py-1 hover:bg-white rounded-sm hover:text-black hover:transition-colors  "
+            >
+              Add
+            </button>
+          </div>
+          <div class="js-todo-list"></div>
+        </div>
+      </div>
+    
+    </div>
+
+    <!--top section-->
+
+    <div class=""></div>
+
+    <!--left section-->
+    <div class=" w-20 left-0 top-0 bottom-0 fixed border-r border-black bg-Witish">
+      <div class="main-container">
+        <div><a>
+          <button class="group relative">
+            
+              <img class="DashBoard-button menu-icons" src="images/pie-chart.png" alt="" />
+              <div class=" absolute top-2 -right-28 px-1 py-1 bg-gray-400 bg-opacity-50 border border-blue-600 transition-all duration-300 opacity-0 invisible group-hover:opacity-100 group-hover:visible  ">Dashboard</div>
+            
+          </button></a>
+        </div>
+        <div><a>
+          <button>
+            <img class="menu-icons" src="images/diet.png" alt="" />
+          </button>
+        </div>
+        <div><a href="BMI.html">
+          <button class=" relative group" >
+            <img class="menu-icons BMI-button" src="images/body-mass-index.png" alt="" />
+            <div class="absolute top-2 -right-36 px-2 py-1  bg-gray-400 bg-opacity-50 border border-blue-600 transition-all duration-300 invisible opacity-0 group-hover:opacity-100 group-hover:visible ">BMI calculator</div>
+          </button></a>
+        </div>
+        <div><a>
+          <button ><img class="menu-icons" src="" alt="" /></button></a>
+        </div>
+        <div><a>
+          <button><img class="menu-icons" src="" alt="" /></button></a>
+        </div>
+        <div><a>
+          <button><img class="menu-icons" src="" alt="" /></button></a>
+        </div>
+        <div><a>
+          <button><img class="menu-icons" src="" alt="" /></button></a>
+        </div>
+        <div><a>
+          <button><img class="menu-icons" src="" alt="" /></button></a>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="script/productivity.js"></script>
+    <script src="script/pomodoro.js"></script>
+    <script type="module" src="script/to-do.js"></script>
+    
+  </body>
+</html>

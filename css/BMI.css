@@ -1,0 +1,35 @@
+body {
+  background-image: url("../images/macos-sequoia-6400x3552-17676.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+
+  animation-name: bodyImage;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes bodyImage {
+  0% {
+    background-size: 100%;
+  }
+
+  100% {
+    background-size: 110%;
+  }
+}
+@font-face {
+  font-family: "Rocher";
+  src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+.BMI-heading {
+  font-family: "Rocher";
+  font-palette: --Purples; /* Apply the purple palette */
+}
+
+@font-palette-values --Purples {
+  font-family: Rocher;
+  base-palette: 6;
+}

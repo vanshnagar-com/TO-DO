@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/productivity.css" />
+    <link rel="stylesheet" href="css/BMI.css" />
+  </head>
+  <body class="h-screen flex flex-row justify-center items-center">
+    <div
+      class="bg-purple-600 bg-opacity-20 w-2/3 h-2/3 flex flex-col items-center justify-center rounded-2xl"
+    >
+      <div class="BMI-heading text-white text-6xl mb-16">BMI Calculator</div>
+      <div class="m-2 hover:animate-pulse">
+        <input
+          class="js-BMI-weight px-5 py-2 rounded-md bg-purple-600 border border-black"
+          placeholder="Weight(Kg)"
+          type="number"
+        />
+      </div>
+      <div class="m-2 hover:animate-pulse">
+        <input
+          class="js-BMI-height px-5 py-2 rounded-md bg-purple-600 border border-black"
+          placeholder="Height(m)"
+          type="number"
+        />
+      </div>
+      <div class="js-BMI-Calculate-button">
+        <button
+          class="text-xl px-2 py-4 my-2 rounded-md border-2 bg-purple-400 bg-opacity-40 border-purple-800 text-white active:bg-purple-300 active:opacity-80 transition-all duration-150 hover:bg-opacity-0"
+        >
+          Calculate
+        </button>
+      </div>
+      <div class="w-4">
+        <button>
+          <a href="productivity.html"><img src="images/house.png" alt="" /></a>
+        </button>
+      </div>
+    </div>
+    <div
+      class="bg-purple-600 ml-8 bg-opacity-20 w-96 h-2/3 flex flex-col items-center justify-center rounded-2xl"
+    >
+      <div class="js-BMI-calculations text-white text-5xl mb-4"></div>
+      <img class="rounded-full" src="images/meter.png " alt="" />
+      <div class="BMI-personal-message text-white text-4xl"></div>
+    </div>
+    <script src="script/BMI.js"></script>
+  </body>
+</html>

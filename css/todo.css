@@ -1,0 +1,176 @@
+.delete-button {
+  background-color: white;
+}
+
+.full-element {
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  font-size: medium;
+  padding-left: 10px;
+  margin: 7px 4px 7px 10px;
+  border-color: rgb(82, 82, 82);
+  border-width: 1px;
+  border-radius: 8px;
+  border-color: rgb(47, 120, 237);
+  box-shadow: 1px 1px 15px rgb(3, 3, 184);
+  animation-name: COLORCHANGINGtIMEiNPUT;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.js-add-button {
+  box-shadow: 1px 1px 15px rgb(125, 125, 141);
+  transition-duration: 400ms;
+}
+
+.js-add-button:hover {
+  transition-duration: 100ms;
+
+  box-shadow: 1px 1px 50px rgb(203, 6, 6), inset 1px 1px 50px rgb(203, 6, 6);
+}
+.js-add-button:active {
+  background-color: black;
+  color: white;
+}
+
+.js-input-todo {
+  text-align: center;
+  color: white;
+  box-shadow: 1px 1px 15px rgb(125, 125, 141);
+  caret-color: #402e32;
+}
+.js-input-todo:active {
+  accent-color: white;
+}
+.js-input-todo:hover {
+  animation-name: COLORCHANGINGtIMEiNPUT;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+.js-slider-input {
+  accent-color: white;
+}
+.js-todo-time {
+  box-shadow: 1px 1px 15px rgb(125, 125, 141),
+    inset 1px 1px 60px rgb(255, 255, 255);
+  color: black;
+  animation: TimerInput 2s ease-in infinite;
+  animation-direction: alternate;
+}
+.strikethrough {
+  text-decoration: line-through;
+  text-decoration-color: rgb(255, 255, 255);
+}
+
+@keyframes COLORCHANGINGtIMEiNPUT {
+  0% {
+    box-shadow: inset 1px 1px 80px rgb(255, 0, 0);
+  }
+  10% {
+    box-shadow: inset 1px 1px 80px rgb(255, 77, 0);
+  }
+  20% {
+    box-shadow: inset 1px 1px 80px rgb(255, 136, 0);
+  }
+  30% {
+    box-shadow: inset 1px 1px 80px rgb(255, 251, 0);
+  }
+  40% {
+    box-shadow: inset 1px 1px 80px rgb(125, 250, 0);
+  }
+  50% {
+    box-shadow: inset 1px 1px 80px rgb(0, 255, 119);
+  }
+  60% {
+    box-shadow: inset 1px 1px 80px rgb(0, 255, 247);
+  }
+  70% {
+    box-shadow: inset 1px 1px 80px rgb(0, 115, 255);
+  }
+  80% {
+    box-shadow: inset 1px 1px 80px rgb(144, 0, 255);
+  }
+  90% {
+    box-shadow: inset 1px 1px 80px rgb(255, 0, 234);
+  }
+  100% {
+    box-shadow: inset 1px 1px 80px rgb(255, 0, 183);
+  }
+}
+
+@keyframes TimerInput {
+  0% {
+    box-shadow: inset 1px 1px 5px rgb(255, 255, 255);
+  }
+
+  100% {
+    box-shadow: inset 1px 1px 300px rgb(255, 255, 255);
+  }
+}
+.delete-button {
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #e62222;
+  margin: 7px 10px 7px 10px;
+}
+
+.delete-button,
+.delete-button span {
+  transition: 200ms;
+}
+
+.delete-button .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+
+.delete-button .icon {
+  position: absolute;
+  border-left: 1px solid #c41b1b;
+  transform: translateX(110px);
+  height: 30px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button svg {
+  width: 15px;
+  fill: #eee;
+}
+
+.delete-button:hover {
+  background: #ff3636;
+}
+
+.delete-button:hover .text {
+  color: transparent;
+}
+
+.delete-button:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+.delete-button:focus {
+  outline: none;
+}
+
+.delete-button:active .icon svg {
+  transform: scale(0.8);
+}
